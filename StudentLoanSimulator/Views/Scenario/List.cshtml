@@ -1,0 +1,14 @@
+﻿<!--The below line defines the model for this view-->
+@model ScenarioListViewModel
+
+<h1>@Model.Title</h1>
+@foreach (var scenario in Model.Scenarios)
+{
+    <div>
+        <h2>@scenario.ScenarioId</h2>
+        @if (@scenario.Universities != null)
+        {
+            <h3>@scenario.Universities.ToList()</h3>
+        }
+    </div>
+}

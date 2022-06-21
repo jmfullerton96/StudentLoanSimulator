@@ -1,0 +1,48 @@
+﻿IDEA
+
+Student Loan Simulator
+
+Essentailly a research aid for high school students and parents
+
+It will guide you through the steps to determine what it will cost, how much you may earn, what repayment will look like (realistically, with cost of living, food, car payment, exc other factors)
+
+Ability to include multiple schools, living situations during education and post education.
+
+Compare careers, schools, payment options, locations (during and post education)
+Add optional parameters, like credit card debt, auto loans, food cost, alcohol, ubers, exc
+
+Last step is to create an account (so that your information can be retrieved later, and more comparisons made)
+
+Consider putting some features behind a paywall. Maybe max comparison is two schools
+
+When creating an account there can be a section to enter a "course code" or something similar. This would be a code students enter when their school or district has purchased a plan for each student to use the tool free of charge essentially giving them paywalled features from the start. Include an info icon/description so that your average person knows what they're seeing
+
+Have emily design logos, astetic, and marketing plan
+
+Create bulk/individual pricing plans. Consider having bulk plans expire, but keep data so that if a student wants to change their path in a year or so later they can come back and resume/edit what they had before
+Automate the subscription(s) so that there is no sales calls, meetings, exc needed. Auto generate codes for bulk plans to hand out to students. Individual plans don't need codes, they can be one time fee to unlock premium features for life
+
+ASP.NET Core MVC Project
+
+Research colors and pick ones associated with curiosity, research, finances
+Research ways to make the experience memorable, and the information to be retained
+
+
+-----------------
+
+Some things could be held in a database or likely implement an API to aleviate the User from entering so much data. However, I don't want to do this. The idea is to force the user to research all aspects of this large decision.
+
+----------------
+
+the wwwroot folder is where it will default search for things under the root ie. www.studentloansimulator.com/foo.img
+
+wwwroot contains client side packages only
+
+-----------------
+Database migrations see: https://docs.microsoft.com/en-us/ef/core/cli/powershell
+
+To replace the DB schema run 'Remove-Migration -Force'
+
+To create a new migration run 'add-migration InitialMigration'
+
+To update the DB after migration run 'Update-Database'
